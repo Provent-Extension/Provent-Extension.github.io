@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dosis:wght@300&family=Inter&family=Poppins:ital,wght@0,600;1,600&family=Space+Mono&display=swap');
+
+*{
+
+}
+
+h1 {
+    color:#424244;
+    font-family: 'Inter', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+h2 {
+    color:#424244;
+    font-family: Inter;
+    font-style: Medium;
+    font-size: 40px;
+    line-height: 48px;
+    Align: Left;
+
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+h3 {
+    color:#88DBD4;
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
+
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+p {
+    color:#424244;
+    font-family: 'Inter', sans-serif;
+    
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+button {
+    background-color: #066660;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav{
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero {
+    background-color: #D8FBF9;
+    border-bottom-right-radius: 300px;
+    
+}
+
+.hero p{
+    font-size: 40px;
+}
+
+.hero button {
+    font-size: 50px;
+}
+
