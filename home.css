@@ -57,7 +57,28 @@ nav {
     border-bottom-right-radius: 300px;
     position: relative;
     top: 0px;
-    min-height: 80vh;
+    /* min-height: 90vh; */
+    padding: 0px 10%;
+    height: auto;
+
+    
+}
+.hero:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.hero_column {
+    /* width: 50%; */
+    float: left;
+    position: relative;
+    height: auto;
+}
+.hero_left {
+    width: 60%;
+}
+.hero_right {
+    width: 40%;
 }
 
 .intro_title {
@@ -66,7 +87,7 @@ nav {
     font-size: 1.5em;
     position: relative;
     top: 120px;
-    left: 30px;
+    font-weight: bold;
 }
 
 .intro_slogan {
@@ -75,7 +96,6 @@ nav {
     font-size: 3em;
     position: relative;
     margin-top: 120px;
-    left: 30px;
 }
 
 .intro_description {
@@ -83,8 +103,17 @@ nav {
     font-family: 'Inter', sans-serif;
     font-size: 1em;
     position: relative;
-    margin-top: 80px;
-    left: 30px;
+    margin-top: 50px;
+    width: 380px;
+}
+
+.provent_timer {
+    margin-top: 100px;
+    width: auto;
+    height: 400px;
+    position: relative;
+    right: 0px;
+    float: right;
 }
 
 .hero_download {
@@ -99,16 +128,19 @@ nav {
     display: block;
     margin: 0 auto;
     width: 200px;
-    top: 200px;
+    height: 30px;
+    line-height: 30px;
+    top: -30px;
 }
+
 
 .quote {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 600;
-    font-size: 70px;
-    line-height: 85px;
+    font-size: 1.2;
     text-align: center;
-
     color: #424244;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
 }
