@@ -144,3 +144,29 @@ nav {
     display: block;
     margin: 0 auto;
 }
+
+.features_section {
+    margin-top: 100px;
+}
+
+.feature_container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.feature_column {
+    width: 50%;
+    float: left;
+    position: relative;
+    height: auto;
+}
+
+.feature_text_column {
+
+}
+
+.feature_image {
+    width: 100%;
+    height: auto;
+    border-radius: 0px 0px 0px 50%;
+}
