@@ -57,23 +57,25 @@ nav {
     border-bottom-right-radius: 300px;
     position: relative;
     top: 0px;
-    /* min-height: 90vh; */
+    min-height: 80vh;
     padding: 0px 10%;
     height: auto;
-
-    
 }
+
 .hero:after {
     content: "";
     display: table;
     clear: both;
 }
+
 .hero_column {
     /* width: 50%; */
     float: left;
     position: relative;
     height: auto;
+	margin: 5% 0px;
 }
+
 .hero_left {
     width: 60%;
 }
@@ -162,11 +164,39 @@ nav {
 }
 
 .feature_text_column {
+	width: 70%;
+	margin: 0 auto;
+	display: block;
+	top: 100px;
+	position: relative;
+}
 
+.left_ftc {
+
+}
+.right_ftc {
+	position: relative;
+	margin-left: auto;
+	display: block;
+}
+
+.feature_image_column {
+	width: 100%;
 }
 
 .feature_image {
-    width: 100%;
+    width: 600px;
     height: auto;
-    border-radius: 0px 0px 0px 50%;
+	position: relative;
+	display: block;
+}
+
+.left_fic {
+	border-radius: 0px 0px 50% 0px;
+	margin-right: auto;
+}
+
+.right_fic {
+	border-radius: 0px 0px 0px 50%;
+	margin-left: auto;
 }
