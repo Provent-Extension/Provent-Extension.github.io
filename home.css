@@ -5,16 +5,6 @@ body {
     /* background: #333; */
 }
 
-.nav-download-btn {
-    background-color: #066660;
-    color: #FFFFFF;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
 nav {
     background-color: #FFFFFF;
     display: flex;
@@ -50,6 +40,18 @@ nav {
 
 .nav-right {
     float: right;
+	color: #424244;
+	font-weight: bold;
+}
+
+.nav-download-btn {
+    background-color: #066660;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    border-radius: 40px;
+    padding: 10px 20px;
+    text-decoration: none;
 }
 
 .hero {
@@ -139,7 +141,7 @@ nav {
 .quote {
     font-family: 'Inter';
     font-style: normal;
-    font-size: 1.2;
+    font-size: 1.5em;
     text-align: center;
     color: #424244;
     width: 400px;
@@ -171,6 +173,19 @@ nav {
 	position: relative;
 }
 
+.feature_title {
+	font-family: 'Inter';
+	font-style: normal;
+	font-size: 1.5em;
+	color: #424244;
+}
+
+.feature_description {
+	font-family: 'Inter';
+	font-style: normal;
+	color: #424244;
+}
+
 .left_ftc {
 
 }
@@ -200,3 +215,32 @@ nav {
 	border-radius: 0px 0px 0px 50%;
 	margin-left: auto;
 }
+
+/* Email section */
+
+.emaillist {
+	margin-top: 200px;
+	background: linear-gradient(45.38deg, #E2FFFD -40%, #ECF5F5 58.09%);
+	padding: 10% 10%;
+}
+
+.email_title {
+	font-size: 1.5em;
+	font-family: 'Inter';
+	font-style: normal;
+	color: #424244;
+}
+
+.email_signup_prompt {
+	color: #88DBD4;
+	font-family: 'Inter';
+	font-style: normal;
+}
+
+.email_signup_description {
+	color: #424244;
+	font-family: 'Inter';
+	font-style: normal;
+}
+
+/* Email section ^^^ */
