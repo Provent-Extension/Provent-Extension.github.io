@@ -88,7 +88,7 @@ nav {
 .intro_title {
     color:#88DBD4;
     font-family: 'Inter', sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
     position: relative;
     top: 120px;
     font-weight: bold;
@@ -135,13 +135,15 @@ nav {
     height: 30px;
     line-height: 30px;
     top: -30px;
+	font-weight: bold;
+	text-shadow: 0 0 5px #000000;
 }
 
 
 .quote {
     font-family: 'Inter';
     font-style: normal;
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     color: #424244;
     width: 400px;
@@ -176,7 +178,7 @@ nav {
 .feature_title {
 	font-family: 'Inter';
 	font-style: normal;
-	font-size: 1.5em;
+	font-size: 2em;
 	color: #424244;
 }
 
@@ -221,11 +223,12 @@ nav {
 .emaillist {
 	margin-top: 200px;
 	background: linear-gradient(45.38deg, #E2FFFD -40%, #ECF5F5 58.09%);
-	padding: 10% 10%;
+	padding: 5% 10%;
+	border-radius: 0px 0px 0px 150px;
 }
 
 .email_title {
-	font-size: 1.5em;
+	font-size: 2em;
 	font-family: 'Inter';
 	font-style: normal;
 	color: #424244;
@@ -244,3 +247,35 @@ nav {
 }
 
 /* Email section ^^^ */
+
+.ready_title {
+	font-family: 'Inter';
+    font-style: normal;
+    font-size: 2em;
+    text-align: center;
+    color: #424244;
+    width: 400px;
+    display: block;
+    margin: 60px auto;
+}
+
+/* Footer */
+
+footer {
+	margin-top: 50px;
+	width: 100%;
+	height: 200px;
+	background: #00635D;
+}
+
+.footer_column {
+	
+}
+
+
+.credits {
+	color: #FFFFFF;
+	font-family: 'Inter';
+	font-style: normal;
+}
+/* Footer ^^^ */
