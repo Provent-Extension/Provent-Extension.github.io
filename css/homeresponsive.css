@@ -85,4 +85,16 @@
     .ham_menu {display:block;}
     .nav-download-btn {display: none;}
     .nav_link {display: none;}
+
+    .intro_slogan {
+        font-size: 3em;
+    }
+    .provent_timer {
+        height: 200px;
+        margin-bottom: 50px;
+    }
+    @keyframes clock_bounce {
+        from {top: -10px;}
+        to {top: 10px;}
+    }
 }
