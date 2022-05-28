@@ -8,11 +8,14 @@ function show_responsive_bar() {
 			vnb.style.display = "none";
 		}, 100);
 	}
+	
 	else {
-		vnb.style.right = "0px";
+		// vnb.style.right = "0px";
 		vnb.style.display = "block";
 		vnb_blur.style.display = "block";
-		
+		setTimeout(() => {
+			vnb.style.right = "0px";
+		}, 100);
 	}
 }
 function animate_ham_menu() {

@@ -6,6 +6,7 @@ html {
 
 body {
     margin: 0;
+    overflow-x: hidden;
     /* background: #333; */
 }
 
@@ -65,9 +66,161 @@ nav {
     font-family: 'Inter', sans-serif;
     text-align: center;
     border-radius: 40px;
-    padding: 10px 20px;
+    padding: 10px 18px;
     text-decoration: none;
+    transition: 0.3s;
+    border: #066660 2px solid;
 }
+
+.nav-download-btn:hover {
+    background: transparent;
+    color: #424244;
+}
+
+.quote {
+    width: 80%;
+}
+
+/*Hamburger Menu*/
+.ham_menu {
+    width:auto;
+    height:auto;
+    border:none;
+    cursor:pointer;
+    display:none;
+    margin-right:2em;
+    position: relative;
+    top: 15px;
+    background: transparent;
+}
+.ham_menu:focus {
+    outline:none;
+}
+.lines {
+    width:25px;
+    height:3px;
+    margin:4px;
+    top:0px;
+    background: #88DBD4;
+}
+
+.line_one_ani {
+    transition:0.2s;
+    transform:rotate(135deg);
+    position: relative;
+    top:7px;
+    animation: move_then_rotate 0.1s;
+}
+@keyframes move_then_rotate {
+    from {top:0px; transform:rotate(0deg);}
+    to {top:7px; transform:rotate(135deg);}
+}
+.line_two_ani {
+    transition:0.2s;
+    transform:rotate(45deg);
+}
+.line_three_ani {
+    position: relative;
+    transition:0.5s;
+    top:-7px;
+    animation: move_then_disappear 0.1s;
+    opacity:0;
+    right:0px;
+}
+@keyframes move_then_disappear {
+    0% {right:0px; opacity:1; top:0px;}
+    25% {right:5px;}
+    50% {right:-5px;}
+    100% {right:0px; opacity:0; top:-7px;}
+}
+.ham_menu_spin {
+    animation: ham_menu_spin 0.2s;
+    transform-origin: center;
+    transform:rotate(0deg);
+}
+@keyframes ham_menu_spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+#hammenu_line_one {transition:0.2s;}
+#hammenu_line_two {transition:0.2s;}
+#hammenu_line_three {transition:0.2s;}
+@keyframes move_then_reappear {
+    0% {right:0px; opacity:0; top:-7px;}
+    25% {right:-5px;}
+    50% {right:5px;}
+    100% {right:0px; opacity:1; top:0px;}
+}
+/*Hamburger Menu ^ ^ ^*/
+
+/* Mobile navbar */
+.vnb_blur {
+    background: #000000;
+    opacity: 0.7;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 89;
+    transition: 0.3s;
+    display: none;
+    cursor: pointer;
+}
+
+.mobile_navbar {
+    background: #FFFFFF;
+    height: 100vh;
+    width: 70%;
+    position: fixed;
+    /* display: block; */
+    display: none;
+    right: 0;
+    z-index: 90;
+    right: -500px;
+    transition: 0.3s;
+}
+
+.mobile_navbar_ul {
+    position: relative;
+    top: 200px;
+    list-style-type: none;
+    margin: 0 auto;
+    display: block;
+    padding: 0;
+}
+.nav_mobile_li {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.nav_mobile_link {
+    color: #424244;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav_mobile_link:hover {
+    color: #88DBD4;
+}
+.mobilenav-download-btn {
+    background: #066660;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    border-radius: 40px;
+    padding: 10px 15px;
+    top: 100px;
+    position: relative;
+    text-decoration: none;
+    transition: 0.3s;
+    border: #066660 2px solid;
+}
+
+.mobilenav-download-btn:hover {
+    background: transparent;
+    color: #424244;
+}
+/* Mobile navbar ^^^ */
 
 .hero {
     background: linear-gradient(149.14deg, #D8FBF9 -5.45%, #ECF5F5 81.68%);
@@ -151,9 +304,14 @@ nav {
     line-height: 30px;
     top: -30px;
 	font-weight: bold;
-	text-shadow: 0 0 5px #000000;
+    transition: 0.3s;
+    border: #066660 2px solid;
 }
 
+.hero_download:hover {
+    background: transparent;
+    color: #424244;
+}
 
 .quote {
     font-family: 'Inter';
@@ -262,6 +420,26 @@ nav {
 	font-style: normal;
 }
 
+.email_list_button {
+    background-color: #066660;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    border-radius: 40px;
+    padding: 10px 20px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+
+    transition: 0.3s;
+    border: #066660 2px solid;
+}
+
+.email_list_button:hover {
+    background: transparent;
+    color: #424244;
+}
 .email_signup_description {
 	color: #424244;
 	font-family: 'Inter';
@@ -356,6 +534,11 @@ footer {
 .flt_link {
 	color: white;
 	text-decoration: none;
+    transition: 0.3s;
+}
+
+.flt_link:hover {
+    color: #D8FBF9;
 }
 
 .credits {
