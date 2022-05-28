@@ -197,6 +197,8 @@ nav {
     color: #424244;
     text-decoration: none;
     transition: 0.3s;
+    font-family: 'Inter';
+    font-style: normal;
 }
 
 .nav_mobile_link:hover {
