@@ -1,0 +1,163 @@
+@media only screen and (max-width: 1200px) {
+    .feature_text_column {
+        top: 0px;
+        width: 65%;
+    }
+    .feature_image {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .hero_column {
+        /* width: 50%; */
+        float: none;
+    }
+    
+    .hero_left {
+        width: 100%;
+    }
+    .hero_right {
+        width: 100%;
+    } 
+
+    .provent_timer {
+        float: none;
+        margin: 0 auto;
+        display: block;
+    }   
+
+
+    .feature_column {
+        width: 100%;
+        float: none;
+        position: relative;
+        height: auto;
+    }
+    
+    .feature_text_column {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        top: 0px;
+        position: relative;
+    }
+    .feature_image {
+        width: 80%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .middle_desktop {
+        display: none;
+    }
+    .middle_mobile {
+        display: block;
+    }
+
+    .footer_column {
+        width: 100%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .fsc_logo_container {
+        width: 60px;
+    }
+    .footer_logo {
+        width: 60px;
+        left: 15px;
+        margin-bottom: 30px;
+    }
+    .footer_secondary_column {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .footer_list_item {
+        text-align: center;
+        display: block;
+        margin: 5px auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .quote {
+        width: 80%;
+    }
+    .nav_link {
+        display: none;
+    }
+
+    
+    /*Hamburger Menu*/
+    .ham_menu {
+        width:auto;
+        height:auto;
+        border:none;
+        background:red;
+        color: blue;
+        cursor:pointer;
+        display:none;
+        float:right;
+        margin-right:2em;
+    }
+    .ham_menu:focus {
+        outline:none;
+    }
+    .lines {
+        width:25px;
+        height:3px;
+        margin:4px;
+        top:0px;
+    }
+
+    .line_one_ani {
+        transition:0.2s;
+        transform:rotate(135deg);
+        position: relative;
+        top:7px;
+        animation: move_then_rotate 0.1s;
+    }
+    @keyframes move_then_rotate {
+        from {top:0px; transform:rotate(0deg);}
+        to {top:7px; transform:rotate(135deg);}
+    }
+    .line_two_ani {
+        transition:0.2s;
+        transform:rotate(45deg);
+    }
+    .line_three_ani {
+        position: relative;
+        transition:0.5s;
+        top:-7px;
+        animation: move_then_disappear 0.1s;
+        opacity:0;
+        right:0px;
+    }
+    @keyframes move_then_disappear {
+        0% {right:0px; opacity:1; top:0px;}
+        25% {right:5px;}
+        50% {right:-5px;}
+        100% {right:0px; opacity:0; top:-7px;}
+    }
+    .ham_menu_spin {
+        animation: ham_menu_spin 0.2s;
+        transform-origin: center;
+        transform:rotate(0deg);
+    }
+    @keyframes ham_menu_spin {
+        from {transform:rotate(0deg);}
+        to {transform:rotate(360deg);}
+    }
+    #hammenu_line_one {transition:0.2s;}
+    #hammenu_line_two {transition:0.2s;}
+    #hammenu_line_three {transition:0.2s;}
+    @keyframes move_then_reappear {
+        0% {right:0px; opacity:0; top:-7px;}
+        25% {right:-5px;}
+        50% {right:5px;}
+        100% {right:0px; opacity:1; top:0px;}
+    }
+    /*Hamburger Menu ^ ^ ^*/
+}

@@ -4,8 +4,10 @@
         <title>Provent</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" href="css/homeresponsive.css">
         <link rel="icon" href="images/logosmall.png">
+		
     </head>
     
     <body>
@@ -17,17 +19,24 @@
                             <img class="nav-logo" src="images/logobig.png" alt="Provent Logo">
                         </li>
 
+						<li class="nav-right">
+							<button id="entire_ham_menu" class="ham_menu" onclick="animate_ham_menu()">
+								<div id="hammenu_line_one" class="lines"></div>
+								<div id="hammenu_line_two" class="lines"></div>
+								<div id="hammenu_line_three" class="lines"></div>
+							</button>
+						</li>
+                        
                         <li class="nav-right"><a class="nav-download-btn" href="" target="_blank">Add to Chrome</a></li>
-                        <li class="nav-right">Contact</li>
-                        <li class="nav-right">Resources</li>
-                        <li class="nav-right">About us</li>
-                        <li class="nav-right">Product</li>      
-                    </ul>
+                        <li class="nav-right"><a class="nav_link" href="#contact">Contact</a></li> 
+                        <li class="nav-right"><a class="nav_link" href="#features">Features</a></li> 
+                        <li class="nav-right"><a class="nav_link" href="#home">Home</a></li>      
+					</ul>
                 </div>
             </nav>
         </section>
          
-        <section class='hero'>
+        <section class='hero' id="home">
             <div class="hero_column hero_left">
                 <p class="intro_title">Introducing Provent</p>
                 <h1 class="intro_slogan">Pre<span style="color:#00635D;">vent Pro</span>crastination.<br>With Pomodoro.</h1>
@@ -47,13 +56,13 @@
         <h2 class='quote'>Manage your time and say <span style="color:#00635D;">goodbye</span> to <span style="color:#00635D;">procrastination</span>.</h2>
       
 
-        <section class='features_section'>
+        <section class='features_section' id="features">
 		
 			<!-- Feature -->
             <div class='feature_container'>
                 <div class="feature_column">
 					<div class="feature_text_column left_ftc">
-						<h1 class="feature_title">Key feature 1</h1>
+						<h1 class="feature_title">Pomodoro timer</h1>
 						<p class="feature_description">Description blah blah blah blah. Description blah blah blah blah. Description blah blah blah blah. Description blah blah blah blah. Description blah blah blah blah. </p>
 					</div>
 				</div>
@@ -68,7 +77,7 @@
             
 		
 			<!-- Feature -->
-            <div class='feature_container'>
+            <div class='feature_container middle_desktop'>
 			
 				<div class="feature_column">
 					<div class="feature_image_column">
@@ -78,11 +87,30 @@
 			
                 <div class="feature_column">
 					<div class="feature_text_column right_ftc">
-						<h1 class="feature_title">Key feature 1</h1>
+						<h1 class="feature_title">Distractive Website blocker</h1>
 						<p class="feature_description">Description blah blah blah blah. Description blah blah blah blah. Description blah blah blah blah. Description blah blah blah blah. Description blah blah blah blah. </p>
 					</div>
 				</div>
             </div>
+			<!-- Feature ^^^ -->
+
+			<!-- Feature -->
+			<div class='feature_container middle_mobile'>
+
+                <div class="feature_column">
+					<div class="feature_text_column left_ftc">
+						<h1 class="feature_title">Distractive Website blocker</h1>
+						<p class="feature_description">Description blah blah blah blah. Description blah blah blah blah. Description blah blah blah blah. Description blah blah blah blah. Description blah blah blah blah. </p>
+					</div>
+				</div>
+
+                <div class="feature_column">
+					<div class="feature_image_column">
+						<img class="feature_image right_fic" src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-landscape.png">
+					</div>
+				</div>
+
+			</div>
 			<!-- Feature ^^^ -->
 			
 		
@@ -90,7 +118,7 @@
             <div class='feature_container'>
                 <div class="feature_column">
 					<div class="feature_text_column left_ftc">
-						<h1 class="feature_title">Key feature 3</h1>
+						<h1 class="feature_title">Modern clean chrome tab with productive widgets</h1>
 						<p class="feature_description">Description blah blah blah blah. Description blah blah blah blah. Description blah blah blah blah. Description blah blah blah blah. Description blah blah blah blah. </p>
 					</div>
 				</div>
@@ -110,8 +138,6 @@
             <h3 class="email_signup_prompt">Sign-up to the Provent email list today.</h3>
             <p class="email_signup_description">We value time just as much as you do. Learn more about how you can be more productive, in minutes.</p>
             
-			<!-- Add mailchimp later -->
-			
 			
         </section>
 
@@ -122,7 +148,7 @@
 		<a class="hero_download">Use Provent Now</a>
     
 
-		<footer>
+		<footer id="contact">
 			<div class="footer_column_container">
 				<div class="footer_column">
 					<div class="footer_secondary_column fsc_logo_container">
@@ -165,5 +191,7 @@
 			</div>
 			<p class="credits">@Provent | Prevent Procrastination</p>
 		</footer>
+
+		<script src="js/navbar.js"></script>
     </body>
 </html>
