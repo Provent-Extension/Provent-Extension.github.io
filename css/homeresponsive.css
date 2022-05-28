@@ -65,7 +65,6 @@
     }
     .footer_logo {
         width: 60px;
-        left: 15px;
         margin-bottom: 30px;
     }
     .footer_secondary_column {
@@ -73,6 +72,9 @@
         width: 100%;
         display: block;
         margin: 0 auto;
+    }
+    .footer_list_container {
+        padding: 0;
     }
     .footer_list_item {
         text-align: center;
@@ -97,4 +99,32 @@
         from {top: -10px;}
         to {top: 10px;}
     }
+    .intro_title {
+        font-size: 1.2em;
+    }
+    .intro_slogan {
+        font-size: 2.2em;
+    }
+    .intro_description {
+        width: 90%;
+        margin-top: 5px;
+    }
+    .quote {
+        font-size: 1.2em;
+        width: 90%;
+    }
+    .feature_title {
+        font-size: 1.5em;
+    }
+    .feature_description {
+        font-size: 1em;
+    }
+    .email_title {font-size: 1.5em;}
+    .email_signup_prompt, .email_signup_description {font-size: 1em;}
+    .ready_title {
+        font-size: 1.5em;
+        width: 90%;
+    }
+
+
 }
