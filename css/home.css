@@ -439,7 +439,7 @@ nav {
     font-family: 'Inter', sans-serif;
     text-align: center;
     border-radius: 40px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     text-decoration: none;
     position: relative;
     display: inline-block;
@@ -447,6 +447,7 @@ nav {
 
     transition: 0.3s;
     border: #066660 2px solid;
+    font-weight: bold;
 }
 
 .email_list_button:hover {
