@@ -293,8 +293,8 @@ nav {
 }
 
 @keyframes clock_bounce {
-    from {top: -30px;}
-    to {top: 30px;}
+    from {top: -20px;}
+    to {top: 20px;}
 }
 
 .hero_download {
