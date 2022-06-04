@@ -10,6 +10,10 @@ body {
     /* background: #333; */
 }
 
+img {
+    pointer-events: none;
+}
+
 nav {
     background-color: #FFFFFF;
     display: flex;
