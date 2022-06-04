@@ -1,0 +1,147 @@
+/* CSS For the Link in Bio */
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	background: linear-gradient(-130deg, #FFF, #e6f6f6, #88dbd4);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+
+	font-family: 'Inter', sans-serif;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.container {
+	position: relative;
+	top: 0%;
+	width: 1000px;
+	display: block;
+	margin: 0 auto;
+	min-height: 85vh;
+	margin-bottom: 15vh;
+}
+
+@media only screen and (max-width: 1450px) {
+	.container {
+		width:100vw;
+	}
+}
+
+.profilepicture {
+	position:relative;
+	background-image: url("../images/logosmall.png");
+	border-radius:50%;
+	margin:auto; /*Centers*/
+	top:50px;
+	border: 3px solid #096660;
+
+	background-position: 50% 50%;
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.name {
+	position:relative;
+	text-align:center;
+	color: #096660;
+	font-size: 1.6em;
+	top: 40px;
+	font-weight:bold;
+	margin-bottom:70px;
+}
+
+.all_links_container {
+	padding-bottom: 200px;
+}
+
+.link_container {
+	position: relative;
+	display: block;
+	width: 80%;
+	height: 60px;
+	color: #FFF;
+	background: #096660;
+	margin: 0 auto;
+	font-size: 1.2em;
+	line-height: 60px;
+	text-decoration: none;
+	border-radius: 40px;
+	transition: 0.4s;
+	margin-top: 30px;
+	font-weight: bold;
+	border: solid #096660 2px;
+}
+
+.link_container:hover {
+	transform: scale(1.05);
+	background: transparent;
+	color: white;
+	/* border: #FFF solid; */
+	/* box-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF; */
+}
+
+.icon {
+	position: absolute;
+	font-size: 25px;
+	top: 17.5px;
+	margin-left: 25px;
+	display: inline-block;
+	text-align: center;
+}
+
+
+.fa-globe {color: #FFF;}
+.fa-instagram {color: #FFF;}
+
+.linktext {
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	color: #FFF;
+}
+
+.link_container:hover .linktext {
+	color: #424244;
+}
+
+.link_container:hover .icon {
+	color: #424244;
+}
+
+@media only screen and (max-width: 610px) {
+	.icon {
+		font-size: 0.9em;
+	}
+	.link_container {
+		font-size: 1.4em;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.name {font-size: 25px;}
+}
+
+footer {
+	position: fixed;
+	top: 92.5%;
+	left: 20px;
+}
+
+.trademark {
+	color: #096660;
+}
