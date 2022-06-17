@@ -193,7 +193,7 @@ nav {
 }
 .nav_mobile_li {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.2em;
     margin: 20px 0;
 }
 
@@ -422,6 +422,7 @@ nav {
 	background: linear-gradient(45.38deg, #E2FFFD -40%, #ECF5F5 58.09%);
 	padding: 5% 10%;
 	border-radius: 0px 0px 0px 150px;
+    padding-bottom: 2.5%;
 }
 
 .email_title {
@@ -452,6 +453,7 @@ nav {
     transition: 0.3s;
     border: #066660 2px solid;
     font-weight: bold;
+    margin-bottom: 60px;
 }
 
 .email_list_button:hover {
