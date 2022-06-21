@@ -339,6 +339,7 @@ nav {
 
 .features_section {
     margin-top: 100px;
+    overflow-x: hidden;
 }
 
 .feature_container:after {
