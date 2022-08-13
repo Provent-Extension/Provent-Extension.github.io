@@ -77,9 +77,21 @@ body {
 }
 
 .info_des {
-    margin-bottom: -20px;
+    /* margin-bottom: -20px; */
     color: #424244;
     font-family: 'Inter', sans-serif;
     font-size: 1em;
     position: relative;
+    margin-top: 20px;
+}
+
+.info_l_container {
+    font-family: 'Inter', sans-serif;
+    color: #424244;
+}
+
+.info_li {
+    font-family: 'Inter', sans-serif;
+    color: #424244;
+    padding: 10px 0px;
 }
