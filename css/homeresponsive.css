@@ -53,41 +53,9 @@
     .middle_mobile {
         display: block;
     }
-
-    .footer_column {
-        width: 100%;
-        float: none;
-        display: block;
-        margin: 0 auto;
-    }
-    .fsc_logo_container {
-        width: 60px;
-    }
-    .footer_logo {
-        width: 60px;
-        margin-bottom: 30px;
-    }
-    .footer_secondary_column {
-        float: none;
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-    }
-    .footer_list_container {
-        padding: 0;
-    }
-    .footer_list_item {
-        text-align: center;
-        display: block;
-        margin: 5px auto;
-    }
 }
 
 @media only screen and (max-width: 600px) {
-    .ham_menu {display:block;}
-    .nav-download-btn {display: none;}
-    .nav_link {display: none;}
-
     .intro_slogan {
         font-size: 3em;
     }
