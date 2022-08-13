@@ -16,6 +16,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 4em;
     position: relative;
+    margin-top: 120px;
 }
 
 .page_info_des {
@@ -61,7 +62,8 @@ body {
 
 .right_column_container {
     float: left;
-    width: 80%;
+    width: 75%;
+    margin-left: 5%;
     margin-top: -60px;
     /* background: blue; */
 }
@@ -94,4 +96,28 @@ body {
     font-family: 'Inter', sans-serif;
     color: #424244;
     padding: 10px 0px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .info_container {
+        margin: 10% 5%; /* Decreases the horizontal margins */
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .info_container {
+        margin: 10% 7.5%; /* Decreases the horizontal margins */
+    }
+    .left_column_container {
+        position: relative;
+        top: 0px;
+        width: 100%;
+    }
+    .right_column_container {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .info_title {
+        font-size: 1.5em;
+    }
 }
