@@ -68,8 +68,6 @@ body {
     /* background: blue; */
 }
 
-
-
 .info_title {
     padding-top: 70px;
     color: #424244;
@@ -85,6 +83,8 @@ body {
     font-size: 1em;
     position: relative;
     margin-top: 20px;
+
+    white-space: pre-line; /* collapse WS, preserve LB */
 }
 
 .info_l_container {
@@ -98,13 +98,17 @@ body {
     padding: 10px 0px;
 }
 
+.tos_character_casing {
+    text-transform: uppercase;
+}
+
 @media only screen and (max-width: 1000px) {
     .info_container {
         margin: 10% 5%; /* Decreases the horizontal margins */
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 850px) {
     .info_container {
         margin: 10% 7.5%; /* Decreases the horizontal margins */
     }
