@@ -69,6 +69,8 @@ nav {
     text-decoration: none;
     transition: 0.3s;
     border: #066660 2px solid;
+    position: relative;
+    top: 2.5px;
 }
 
 .nav-download-btn:hover {
