@@ -18,10 +18,12 @@
 
 .producthunt-banner a {
   color: #0D625D;
+  text-decoration: none;
+  transition: .25s;
 }
 
 .producthunt-banner a:hover {
-  color: #88DBD4;
+  filter: brightness(1.8);
 }
 
 @media only screen and (max-width: 860px) {
