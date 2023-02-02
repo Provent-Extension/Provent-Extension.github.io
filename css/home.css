@@ -109,6 +109,7 @@ html {
 .hero_download:hover {
   background: transparent;
   color: #066660;
+  backdrop-filter: blur(1em);
 }
 
 .hero_download.changlog {
@@ -251,6 +252,7 @@ html {
 .email_list_button:hover {
   background: transparent;
   color: #424244;
+  backdrop-filter: blur(1em);
 }
 
 .email_signup_description {
