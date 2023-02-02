@@ -34,6 +34,10 @@ html {
   width: 40%;
 }
 
+.hero_highlight {
+  color:#00635D;
+}
+
 .intro_title {
   color: #88DBD4;
   font-family: 'Inter', sans-serif;
