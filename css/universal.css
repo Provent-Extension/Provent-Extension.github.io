@@ -56,7 +56,7 @@ nav {
 }
 
 .nav_link:hover {
-    color: #88DBD4;
+    color: #066660;
 }
 
 .nav-download-btn {
@@ -75,7 +75,7 @@ nav {
 
 .nav-download-btn:hover {
     background: transparent;
-    color: #424244;
+    color: #066660;
 }
 
 .quote {
