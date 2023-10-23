@@ -70,3 +70,62 @@ function animate_ham_menu() {
   
   
 } //End of function
+
+// Creates download popup options
+function removeDownloadOptions() {
+	document.body.removeChild(document.getElementById("backgroundBlurID"));
+	document.body.removeChild(document.getElementById("modalID"));
+}
+function displayDownloadOptions() {
+	// if already opened, remove it
+	if (document.getElementById("backgroundBlurID") || document.getElementById("modalID")) {
+		removeDownloadOptions();
+	}
+	// else
+	else {
+		let backgroundBlur = document.createElement("div");
+		backgroundBlur.setAttribute("id", "backgroundBlurID");
+		backgroundBlur.classList.add("downloadOptionsBackgroundBlur");
+		backgroundBlur.onclick = function() {
+			removeDownloadOptions();
+		} 
+
+		let modal = document.createElement("div");
+		modal.setAttribute("id", "modalID");
+		modal.classList.add("downloadOptions");
+		
+		let title = document.createElement("h2");
+		title.textContent = "Which version of Provent do you want? Both are free!"
+		title.classList.add("downloadOptionTitle")
+		modal.appendChild(title);
+
+		let crossMark = document.createElement("h3");
+		crossMark.textContent = "x"
+		crossMark.classList.add("downloadOptionCrossMark")
+		crossMark.onclick = function() {
+			removeDownloadOptions();
+		} 
+		modal.appendChild(crossMark);
+
+		// left column
+		let columnLeft = document.createElement("div");
+
+		let provent = document.createElement("a");
+		provent.href = "https://chrome.google.com/webstore/detail/provent-pomodoro-new-tab/cnilpijpbkkefelbjobbfgdhpcdfpilg";
+		provent.textContent = "Provent - includes everything"
+		provent.classList.add("downloadOptionsButton")
+
+		// right column
+		let columnRight = document.createElement("div");
+		
+		let proventZero = document.createElement("a");
+		proventZero.href = "https://chrome.google.com/webstore/detail/provent-zero-pomodoro-sit/mdkafpakfmfighaiblggaeabfckpbaee";
+		proventZero.text = "Provent Zero - everything but custom tab"
+		proventZero.classList.add("downloadOptionsButton")
+
+		modal.appendChild(provent);
+		modal.appendChild(proventZero);
+		document.body.appendChild(backgroundBlur);
+		document.body.appendChild(modal);
+	}
+}

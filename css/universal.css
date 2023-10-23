@@ -71,6 +71,8 @@ nav {
     border: #066660 2px solid;
     position: relative;
     top: 2.5px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .nav-download-btn:hover {
@@ -355,4 +357,173 @@ footer {
     .ham_menu {display:block;}
     .nav-download-btn {display: none;}
     .nav_link {display: none;}
+}
+
+
+/* Download options popup */
+.downloadOptionsBackgroundBlur {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.7;
+    top: 0;
+    z-index: 10;
+}
+.downloadOptions {
+    background: white;
+    height: 250px;
+    width: 400px;
+    position: fixed;
+    top: 15%;
+    display: block;
+    margin: 0 auto;
+    z-index: 10;
+    border-radius: 20px;
+    padding: 15px;
+}
+.downloadOptionTitle {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #066660;
+    font-weight: bold;
+}
+.downloadOptionCrossMark {
+    color: gray;
+    right: 20px;
+    top: 0;
+    position: absolute;
+}
+.downloadOptionCrossMark:hover {
+    color: red;
+}
+.downloadOptionsButton {
+    background: #066660;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    border-radius: 40px;
+    padding: 10px 15px;
+    top: 50px;
+    position: relative;
+    text-decoration: none;
+    transition: 0.3s;
+    border: #066660 2px solid;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.downloadOptionsButton:hover {
+    background: transparent;
+    color: #424244;
+}
+
+/* Download options popup ^^ */
+
+.productsSectionContainer {
+    width: 80%;
+    margin: 5% auto;
+    display: block;
+    padding-top: 80px;
+}
+
+.productsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 100px; Optionally add gap between items */
+}
+
+.productContainer {
+    width: 40%;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.productBanner {
+    margin-top: 0px;
+    padding: 2.5px 30px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    color: #424244;
+    font-size: 1em;
+}
+.productLogo {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.productTitle {
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.productFeature {
+    font-family: 'Inter';
+    font-style: normal;
+    padding: 0 20px;
+    margin-bottom: 0px;
+}
+
+.productDownload {
+    background-color: #066660;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    border-radius: 40px;
+    padding: 10px 18px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: #066660 2px solid;
+    position: relative;
+    top: 2.5px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    width: 120px;
+}
+
+.productContainer:first-child .productDownload:hover {
+    background: transparent;
+    color: #424244;
+}
+
+.productContainer:nth-child(2) .productDownload:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.productMainText {
+    color: #424244;
+}
+
+.productZeroText {
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 850px) {
+    .productsContainer {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .productContainer {
+        width: 300px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 40px;
+    }
+
 }

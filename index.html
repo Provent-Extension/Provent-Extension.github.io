@@ -52,7 +52,10 @@
 							</button>
 						</li>
                         
-                        <li class="nav-right"><a class="nav-download-btn" href="https://chrome.google.com/webstore/detail/provent/cnilpijpbkkefelbjobbfgdhpcdfpilg" target="_blank">Add to Chrome</a></li>
+                        <!-- <li class="nav-right"><a class="nav-download-btn" href="https://chrome.google.com/webstore/detail/provent/cnilpijpbkkefelbjobbfgdhpcdfpilg" target="_blank">Add to Chrome</a></li> -->
+						<!-- <li class="nav-right"><button class="nav-download-btn" onclick="displayDownloadOptions()">Add to Chrome</button></li> -->
+						<li class="nav-right"><a class="nav-download-btn" href="#products">Add to Chrome</a></li>
+
                         <li class="nav-right"><a class="nav_link" href="#contact">Contact</a></li> 
                         <li class="nav-right"><a class="nav_link" href="index.html#features">Features</a></li> 
                         <li class="nav-right"><a class="nav_link" href="index.html#home">Home</a></li>      
@@ -68,7 +71,7 @@
 				<li class="nav_mobile_li" onclick="animate_ham_menu()"><a class="nav_mobile_link" href="index.html#home">Home</a></li> 
 				<li class="nav_mobile_li" onclick="animate_ham_menu()"><a class="nav_mobile_link" href="index.html#features">Features</a></li> 
 				<li class="nav_mobile_li" onclick="animate_ham_menu()"><a class="nav_mobile_link" href="#contact">Contact</a></li> 
-				<li class="nav_mobile_li" onclick="animate_ham_menu()"><a class="mobilenav-download-btn" href="https://chrome.google.com/webstore/detail/provent/cnilpijpbkkefelbjobbfgdhpcdfpilg" target="_blank">Add to Chrome</a></li>
+				<li class="nav_mobile_li" onclick="animate_ham_menu()"><a class="mobilenav-download-btn" href="#products">Add to Chrome</a></li>
 			</ul>
 		</nav>
 
@@ -92,9 +95,9 @@
 				}
 			}
 		</style>
-		<div class="producthunt-banner" style="background: #88DBD4; width: 100%; display: block; position: fixed; z-index: 10; filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+		<!-- <div class="producthunt-banner" style="background: #88DBD4; width: 100%; display: block; position: fixed; z-index: 10; filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
 			<p style="font-family: Inter; font-weight: bold; text-align: center; color: #424244; padding: 0px 5px;">We are live on <a style="color: #0D625D;" href="https://www.producthunt.com/posts/provent-pomodoro-website-blocker" target="_blank">Product Hunt</a>! Your upvote will be much appreciated! 🎉</p>
-		</div>
+		</div> -->
          
         <section class='hero' id="home">
             <div class="hero_column hero_left" data-aos="fade-right">
@@ -110,7 +113,7 @@
         </section>
 
         
-        <a class="hero_download" href="https://chrome.google.com/webstore/detail/provent/cnilpijpbkkefelbjobbfgdhpcdfpilg" target="_blank">Use Provent Now</a>
+        <a class="hero_download" href="#products">Use Provent Now</a>
 
         
         <h2 class='quote'>Manage your time and say <span style="color:#00635D;">goodbye</span> to <span style="color:#00635D;">procrastination</span>.</h2>
@@ -195,8 +198,49 @@
             </div>
 			<!-- Feature ^^^ -->
 
-			<a class="hero_download" style="margin-top: 60px; margin-bottom:-30px;" href="changelog.html">What's changed?</a>
+			<!-- <a class="hero_download" style="margin-top: 60px; margin-bottom:-30px;" href="changelog.html">What's changed?</a> -->
         </section>
+
+
+		<section id="products" class="productsSectionContainer">
+			<h2 class="quote">Our Extensions</h2>
+
+			<div class="productsContainer">
+				<div class="productContainer" style="background: #D1F1F1;">
+					<div class="productBanner" style="background: #AEE1DE;">
+						<p>For procrastinators who want to <b>reclaim their time</b></p>
+					</div>
+
+					<img class="productLogo" src="./images/logobig.png" />
+					<h3 class="productTitle productMainText">Provent</h3>
+
+					<!-- Features -->
+					<p class="productFeature productMainText">Custom Chrome Tab <span style="float:right;">✅</span></p>
+					<p class="productFeature productMainText">Pomodoro timer <span style="float:right;">✅</span></p>
+					<p class="productFeature productMainText">Website blocker <span style="float:right;">✅</span></p>
+					<p class="productFeature productMainText">Free to use <span style="float:right;">✅</span></p>
+
+					<a class="productDownload" href="https://chrome.google.com/webstore/detail/provent-pomodoro-new-tab/cnilpijpbkkefelbjobbfgdhpcdfpilg">Download Free!</a>
+				</div>
+
+				<div class="productContainer" style="background: #424244;">
+					<div class="productBanner" style="background: #D1F1F1;">
+						<p>Already have a favourite custom tab extension? <b>Try Provent Zero</b></p>
+					</div>
+
+					<img class="productLogo" src="./images/proventZeroLogo.png" />
+					<h3 class="productTitle productZeroText">Provent Zero</h3>
+
+					<!-- Features -->
+					<p class="productFeature productZeroText">Custom Chrome Tab <span style="float:right;">❌</span></p>
+					<p class="productFeature productZeroText">Pomodoro timer <span style="float:right;">✅</span></p>
+					<p class="productFeature productZeroText">Website blocker <span style="float:right;">✅</span></p>
+					<p class="productFeature productZeroText">Free to use <span style="float:right;">✅</span></p>
+
+					<a class="productDownload" href="https://chrome.google.com/webstore/detail/provent-zero-pomodoro-sit/mdkafpakfmfighaiblggaeabfckpbaee">Early Access!</a>
+				</div>
+			</div>
+		</section>
 
         <section class='emaillist'>
             <h2 class="email_title">Protect your time. Be productive.</h2>
@@ -213,7 +257,7 @@
 
      
         <h2 class="ready_title">Ready to <span style="color: #00635D;">Prevent Procrastination</span>?</h2>
-		<a class="hero_download" href="https://chrome.google.com/webstore/detail/provent/cnilpijpbkkefelbjobbfgdhpcdfpilg" target="_blank">Use Provent Now</a>
+		<a class="hero_download" href="#products">Use Provent Now</a>
     
 
 		<footer id="contact">
