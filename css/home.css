@@ -100,15 +100,58 @@ html {
     color: #424244;
 }
 
-.quote {
+.dyk {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 1.2em;
+    text-align: center;
+    color: #066660;
+    display: block;
+    margin: 20px auto;
+}
+
+.fact {
     font-family: 'Inter';
     font-style: normal;
     font-size: 2em;
     text-align: center;
     color: #424244;
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+    color: #424244;
     width: 400px;
     display: block;
     margin: 0 auto;
+}
+#home_changing_text {
+    display: inline;
+}
+#blinking_line {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	right:10px;
+	width: 3px;
+	height: 45px;
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: #424244; 
+	}
 }
 
 .features_section {
